@@ -1,42 +1,46 @@
-var a = 10; // number
-var b = 5.6; // number
-var c = 5.6;
+var a = 4.5 // number
+var b = 4.5 // number
+var c = 5 // number
 var d = "JavaScript"; // string
-var e = false; //boolean
-var f = null;
+var e = true
+var f = null // absence of value
 var g;
-
-document.write("a and b are equal? " + (a == b));
+document.write("a = b? " + (a==b));
 document.write("<br>");
-document.write("b and c are equal? " + (b == c));
+document.write("a = b? " + (a == b));
 document.write("<br>");
-document.write("d = " + d);
+document.write("Value of d: " +d);
 document.write("<br>");
-document.write("e = " + e);
+document.write("Value of e: " + e);
 document.write("<br>");
-document.write("f = " + f);
+document.write("Value of f: " + f);
 document.write("<br>");
-document.write("g = " + g);
+document.write("Value of g: " + g);
 document.write("<br>");
-
-function showGreeting() {
-    var hour = new Date().getHours();
-    var greeting;
-    if (hour < 12) {
-        greeting = "Good morning";
-    }
-    else if (hour < 17) {
-        greeting = "Good afternoon";
-    }
-    else {
-        greeting = "Good evening";
-    }
-    document.getElementById("hour").innerHTML = hour;
-    document.getElementById("greeting").innerHTML = greeting;
+document.write("<br>");
+document.write("Conditional Statements:");
+document.write("<br>==========================<br>")
+// const/let
+const hour = new Date().getHours();
+let greeting;
+if (hour < 12) {
+    greeting = "Good Morning";
+}
+else if (hour < 17) {
+    greeting = "Good Afternoon";
+}
+else {
+    greeting = "Good Evening";
 }
 
-var i = 1;
-while (i <= 10) {
-    document.write(i + " ");
-    i = i + 1;
+document.write(greeting);
+document.write("<br>");
+document.write("<br>");
+document.write("While Loop:");
+document.write("<br>==========================<br>")
+
+let num = 1;
+while (num <= 100) {
+    document.write(num + "<br>");
+    num = num + 1;
 }
