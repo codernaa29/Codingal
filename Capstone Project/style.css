@@ -36,3 +36,21 @@ body {
     color: rgba(5, 5, 152, 0.638);
     background-color: white;
 }
+
+.slider {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.slide-wrapper {
+    display: flex;
+    width: 200%;
+    transition: transform 1s ease-in-out;
+}
+
+.slider-image {
+    width: 100px;
+    flex-shrink: 0;
+    height: auto;
+}
